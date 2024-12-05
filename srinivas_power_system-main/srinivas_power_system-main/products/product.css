@@ -1,0 +1,162 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9; /* Light background color */
+}
+.main-container {
+    border-bottom: 2px solid #ffd700; /* Golden border for a premium feel */
+}
+
+/* Logo styling */
+.main-container img {
+    padding: 20px;
+    max-width: 200px;
+    height: auto;
+}
+header a{
+    font-size: large;
+}
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9; /* Light background */
+}
+
+/* Header container styling */
+.main-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #0aa6b4; /* Navy blue background */
+    padding: 10px 20px;
+    border-bottom: 4px solid #000000; /* Golden border */
+}
+
+.main-container img {
+    max-width: 130px;
+    height: auto;
+  }
+
+/* Navigation links styling */
+.main-container a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 5px 5px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.main-container a:hover {
+    color: #ffd700; /* Golden hover effect */
+}
+
+
+
+/* General container styling */
+/* General styles for the page */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9; /* Light background */
+    color: #333;
+}
+
+/* Centering and styling the main header */
+.main-head {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #ffffff; /* Blue background */
+    color: #000000; /* White text */
+}
+
+.main-head h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+/* Product container */
+.product {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Individual product card */
+.product > div {
+    background-color: #ffffff; /* White background */
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    text-align: center;
+    padding: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product > div:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+}
+
+/* Image styling */
+.product img {
+    width: 100%; /* Responsive images */
+    height: auto; /* Maintain aspect ratio */
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 10px;
+    border-radius: 8px 8px 0 0; /* Rounded top corners */
+}
+
+/* Product title styling */
+.product h2 {
+    font-size: 1.2rem;
+    color: #333;
+    margin: 10px 0;
+}
+
+/* Buttons styling */
+.product a {
+    display: inline-block;
+    margin: 8px 5px;
+    padding: 8px 15px;
+    color: #fff; /* White text for buttons */
+    background-color: #3173ba; /* Blue background */
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.product a:hover {
+    background-color: #20c325; /* Darker blue on hover */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .main-head h1 {
+        font-size: 2rem; /* Adjust font size for smaller screens */
+    }
+
+    .product {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Smaller grid columns */
+    }
+
+    .product > div {
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+
+    .product h2 {
+        font-size: 1rem; /* Smaller title font */
+    }
+
+    .product a {
+        font-size: 12px; /* Adjust button size */
+        padding: 6px 10px;
+    }
+}

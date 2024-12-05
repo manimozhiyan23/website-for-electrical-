@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="icon" href="../logo/WhatsApp Image 2023-08-25 at 16.53.38.jpg">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script> -->
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+</head>
+<body>
+    <div>
+        <header class="main-container">
+            <img src="../logo/WhatsApp Image 2023-08-25 at 16.53.38.jpg" alt="Srinivas Power System">
+            <i class="fa-solid fa-house"><a href="../index.html">Home</a></i> 
+            <i class="fa-solid fa-address-card"><a href="../about_page/about.html">About</a></i>
+            <i class="fa-brands fa-product-hunt"><a href="../products/product.html">Product</a></i>
+            <i class="fa-solid fa-phone"><a href="../contact/contact.html">Contact Us</a></i>
+        </header>
+        
+        <h2>Contact Us</h2>
+        <form action="https://formspree.io/f/movqyobb" method="post" id="contactForm">
+            <label for="user_name">Your Name:</label>
+            <input type="text" id="user_name" name="user_name" required><br><br>
+        
+            <label for="user_email">Your Email:</label>
+            <input type="email" id="user_email" name="user_email" required><br><br>
+        
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea><br><br>
+        
+            <button type="button" id="sendButton">Send Email</button>
+        </form>
+        <!-- <script src="script.js"></script> -->
+        
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3749.0337063191428!2d73.7331!3d20.0071!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bddec658e4788d1%3A0x3d904909c17b73ca!2sSADGURU%20Heights!5e0!3m2!1sen!2sin!4v1733045716947!5m2!1sen!2sin" width="500" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <footer>
+            <div class="foot">
+                <div class="address">
+                    <h1>Our Office</h1>
+                    <i class="fa-solid fa-location-dot"></i>Reg Off # 06, Sadguru Heights Apt, Nr Reliance Petrol Pump, Pipe Line Road, Satpur MIDC Industrial Area, Nashik, Maharashtra- 422 007 India<br>
+                    <i class="fa-solid fa-phone"></i><p>+91 93250 04426</p><br>
+                    <i class="fa-solid fa-message"></i><p>srinivaspowersystem@gmail.com</p><br>
+                    <i class="fa-brands fa-linkedin"></i><p><a href="https://www.linkedin.com/in/srinivas-power-system-276061b6/" target="_blank">Srinivas Power System</a></p><br>
+                    <i class="fa-solid fa-cart-shopping"></i><p><a href="https://www.indiamart.com/srinivas-power-system/?srsltid=AfmBOoqYVkIFzJAjJVpLK93JzU-xemf7R1jLQU3biZfVdiD4CCxJqhh6">Indiamart</a></p><br>
+                </div>
+                <div class="timing">
+                    <h1>Business Hours</h1>
+                    <p><b>Monday - Saturday </b><br>9:00AM - 6:00PM</p>
+                    <p><b>Sunday</b><br>Closed</p>
+                </div>
+            </div>
+            <div>&copy;Srinivas Power System, All Right Reserved.</div>
+        </footer>
+    </div>
+</body>
+<script>
+    emailjs.init({
+  publicKey: "fbbjjNS1sFM2_idLi",
+});
+
+
+document.getElementById('sendButton').addEventListener('click', function() {
+  const name = document.getElementById('user_name').value;
+  const email = document.getElementById('user_email').value;
+  const message = document.getElementById('message').value;
+
+  emailjs.send(
+    'service_hl1zktx',
+    'template_56b260c',
+    {
+      name: name,
+      email: email,
+      message: message,
+    },
+    {
+      // Optional parameters
+    }
+  )
+  .then((response) => {
+    console.log('Email sent successfully!', response);
+  })
+  .catch((error) => {
+    console.log('Error sending email:', error);
+  });
+});
+</script>
+</html>

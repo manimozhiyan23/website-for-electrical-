@@ -1,0 +1,259 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9; /* Light background color */
+}
+.main-container {
+    border-bottom: 2px solid #ffd700; /* Golden border for a premium feel */
+}
+
+/* Logo styling */
+.main-container img {
+    padding: 20px;
+    max-width: 200px;
+    height: auto;
+}
+header a{
+    font-size: large;
+}
+/* Reset some default styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9; /* Light background */
+}
+
+/* Header container styling */
+.main-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #0aa6b4; /* Navy blue background */
+    padding: 10px 20px;
+    border-bottom: 4px solid #000000; /* Golden border */
+}
+
+.main-container img {
+    max-width: 130px;
+    height: auto;
+  }
+
+/* Navigation links styling */
+.main-container a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 5px 5px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.main-container a:hover {
+    color: #ffd700; /* Golden hover effect */
+}
+
+/* Main image section */
+.main-image {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.main-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Style for the contact form */
+.contact-form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f4f4f4; /* Light grey background */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.form-group {
+    margin-bottom: 15px; /* Space between fields */
+}
+
+label {
+    font-size: 16px;
+    color: #333; /* Dark text color for readability */
+    display: block;
+    margin-bottom: 5px; /* Space between label and input */
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #333;
+}
+
+input:focus {
+    border-color: #007bff; /* Blue border on focus */
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.2); /* Soft blue shadow */
+}
+
+button {
+    
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff; /* Blue background */
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+button:focus {
+    outline: none;
+}
+
+
+/* map */
+
+
+.map {
+    position: relative; /* Position the map relative to its parent */
+    top: 0;             /* Adjust vertical alignment if necessary */
+    right: 0;           /* Align it to the right edge of the page */
+    margin: 20px;       /* Add some spacing from the edges */
+    width: 500px;       /* Set a fixed width for the map */
+    height: 500px;      /* Set a fixed height for the map */
+    border: 2px solid #ccc; /* Optional border for better visibility */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow for better aesthetics */
+}
+
+@media (max-width: 768px) {
+    .map {
+        position: relative; /* Change to relative for smaller screens */
+        width: 100%;        /* Make it full-width on mobile */
+        height: auto;       /* Adjust height automatically */
+        margin: 0 auto;     /* Center the map on smaller screens */
+    }
+}
+
+
+
+/* Footer Container */
+footer {
+    background-color: #f8f9fa; /* Light grey background */
+    color: #333333; /* Dark text for readability */
+    font-family: 'Arial', sans-serif; /* Modern font */
+    padding: 40px 20px;
+    text-align: left;
+}
+
+/* Footer Flexbox Layout */
+.foot {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap; /* Wrap content on smaller screens */
+}
+
+/* Address Section */
+.address {
+    width: 45%; /* Address section takes 45% width */
+    margin-bottom: 20px;
+}
+
+.address h1 {
+    font-size: 24px;
+    margin-bottom: 12px;
+    color: #003366; /* Dark blue for headings */
+    font-weight: bold;
+}
+
+.address i {
+    font-size: 18px;
+    color: #007bff; /* Blue color for icons */
+    margin-right: 8px;
+    display: inline-flex; /* Ensures the icon stays on the same line as the text */
+    align-items: center; /* Vertically centers the icon with text */
+}
+
+.address p {
+    font-size: 16px;
+    color: #555555; /* Slightly grey for text */
+    margin: 5px 0;
+    display: inline-flex; /* Ensures text stays on the same line as the icon */
+    align-items: center; /* Vertically centers the text with the icon */
+}
+
+.address i a {
+    color: #007bff; /* Link color */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.address i a:hover {
+    color: #0056b3; /* Darker blue on hover */
+}
+
+/* Business Hours Section */
+.timing {
+    width: 45%; /* Business hours section takes 45% width */
+    margin-bottom: 20px;
+}
+
+.timing h1 {
+    font-size: 24px;
+    margin-bottom: 12px;
+    color: #003366; /* Dark blue for headings */
+    font-weight: bold;
+}
+
+.timing p {
+    font-size: 16px;
+    color: #555555; /* Grey text */
+}
+
+/* Bottom Copyright Section */
+footer > div:last-child {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 30px;
+    font-weight: normal;
+    color: #888888; /* Light grey for copyright text */
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+    .foot {
+        flex-direction: column; /* Stack sections vertically on smaller screens */
+        align-items: center;
+    }
+
+    .address, .timing {
+        width: 100%; /* Full width on smaller screens */
+    }
+
+    footer {
+        padding: 30px 15px; /* Adjust padding for smaller screens */
+    }
+
+    .address h1, .timing h1 {
+        font-size: 20px; /* Smaller headings on mobile */
+    }
+
+    .address p, .timing p {
+        font-size: 14px; /* Adjust text size for mobile */
+    }
+}

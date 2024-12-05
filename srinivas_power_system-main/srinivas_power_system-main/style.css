@@ -1,0 +1,437 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9; /* Light background color */
+}
+.main-container {
+    
+    border-bottom: 2px solid #ffd700; /* Golden border for a premium feel */
+}
+
+/* Logo styling */
+.main-container img {
+    padding: 20px;
+    max-width: 200px;
+    height: auto;
+}
+header a{
+    font-size: large;
+}
+/* Reset some default styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9; /* Light background */
+}
+
+/* Header container styling */
+.main-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgb(175, 218, 111); /* Navy blue background */
+    padding: 10px 20px;
+    border-bottom: 4px solid #000000; /* Golden border */
+}
+
+.main-container img {
+    max-width: 130px;
+    height: auto;
+  }
+
+/* Navigation links styling */
+.main-container a {
+    color: black;
+    text-decoration: none;
+    margin: 5px 5px;
+    transition: color 0.3s;
+}
+
+.main-container a:hover {
+    color: #19aaca; /* Golden hover effect */
+}
+
+/* Main image section */
+.main-image {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.main-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Sub-header section styling */
+.sub-head {
+    display: flex;
+    flex-direction: row; /* Arrange left and right sections side by side */
+    align-items: flex-start;
+    justify-content: space-between;
+    margin: 20px;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* Left content (h1 and h3) */
+.left-content {
+    flex: 1; /* Take up equal space */
+    padding-right: 20px; /* Add space between left and right content */
+}
+
+.left-content h1 {
+    font-size: 2rem;
+    color: #003366; /* Navy blue text */
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.left-content h3 {
+    font-size: 1.5rem;
+    color: #0066cc; /* Bright blue text */
+    margin-bottom: 10px;
+    font-style: italic;
+    text-align: left;
+}
+
+/* Right content (p) */
+.right-content {
+    flex: 1; /* Take up equal space */
+    padding-left: 20px; /* Add space between right and left content */
+}
+
+.right-content p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #555; /* Light gray text */
+    text-align: justify; /* Justify paragraph text for neat alignment */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .sub-head {
+        flex-direction: column; /* Stack sections vertically */
+    }
+
+    .left-content,
+    .right-content {
+        padding: 0;
+        text-align: center;
+    }
+
+    .right-content p {
+        text-align: center;
+    }
+}
+
+/* Container for all product features */
+.features-container {
+    display: flex; /* Arrange items in a row */
+    justify-content: space-between; /* Add space between items */
+    flex-wrap: wrap; /* Allow items to wrap to the next line on smaller screens */
+    gap: 20px; /* Space between items */
+    margin: 20px;
+    padding: 20px;
+    background-color: #f4f4f9; /* Light background for the section */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Individual product styling */
+.features-product {
+    flex: 1 1 calc(25% - 40px); /* Take up 25% of the container's width minus gap */
+    max-width: 250px; /* Set a maximum width for each product */
+    text-align: center;
+    padding: 10px;
+    background-color: #ffffff;
+    border: 1px solid #ddd; /* Light border for each product */
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Product image styling */
+.features-product img {
+    max-width: 100%; /* Ensure images are responsive */
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+/* "See More" link styling */
+.features-product a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: #000000;
+    background-color: #ffffff; /* Navy blue background */
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+
+
+/* Hover effect on product cards */
+.features-product:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .features-product {
+        flex: 1 1 calc(50% - 40px); /* 2 items per row on medium screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .features-product {
+        flex: 1 1 100%; /* Full width for smaller screens */
+    }
+}
+
+/* Container for the company history section */
+.company-history {
+    padding: 40px 20px;
+    background-color: #f9f9f9; /* Light background color */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+    max-width: 1200px;
+    margin: 0 auto; /* Center-align the content */
+}
+
+/* Main title styling */
+.company-history h1 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #003366; /* Dark blue color */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Subheading styling */
+.company-history h3 {
+    font-size: 24px;
+    font-weight: 400;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Paragraph styling */
+.company-history p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #555; /* Medium grey text */
+    margin-bottom: 20px;
+    text-align: justify; /* Justify text for better readability */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .company-history h1 {
+        font-size: 28px; /* Smaller title font size on smaller screens */
+    }
+
+    .company-history h3 {
+        font-size: 20px; /* Smaller subheading font size */
+    }
+
+    .company-history p {
+        font-size: 16px; /* Adjust paragraph font size */
+    }
+}
+
+@media (max-width: 480px) {
+    .company-history h1 {
+        font-size: 24px; /* Further reduce title font size */
+    }
+
+    .company-history h3 {
+        font-size: 18px; /* Further reduce subheading font size */
+    }
+
+    .company-history p {
+        font-size: 14px; /* Further reduce paragraph font size */
+    }
+}
+/* Main container for the client section */
+.client {
+    padding: 40px 20px;
+    background-color: #f9f9f9; /* Light background color */
+    border-radius: 10px;
+    text-align: center; /* Center-aligns the content */
+}
+
+/* Centering and styling the h1 tag */
+.client h1 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #003366; /* Dark blue color */
+    margin-bottom: 30px; /* Space below the heading */
+}
+
+/* Image grid container */
+.client div {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); /* Responsive grid */
+    gap: 20px; /* Space between images */
+    justify-content: center; /* Align the grid items to the center */
+    align-items: center; /* Center-align items vertically */
+}
+
+/* Styling individual images */
+.client img {
+    max-width: 100%; /* Responsive images */
+    max-height: 120px; /* Limit the height for uniformity */
+    object-fit: contain; /* Ensures images maintain their aspect ratio */
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+
+.client img:hover {
+    transform: scale(1.1); /* Slight zoom on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .client h1 {
+        font-size: 28px;
+    }
+
+    .client div {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Adjust column size */
+    }
+}
+
+@media (max-width: 480px) {
+    .client h1 {
+        font-size: 24px;
+    }
+
+    .client img {
+        max-height: 80px; /* Adjust image size for small screens */
+    }
+}
+       /* footer */
+
+/* Footer Container */
+footer {
+    background-color: #9eb961; /* Light grey background */
+    color: #000000; /* Dark text for readability */
+    font-family: 'Arial', sans-serif; /* Modern font */
+    padding: 40px 20px;
+    text-align: left;
+}
+
+/* Footer Flexbox Layout */
+.foot {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap; /* Wrap content on smaller screens */
+}
+
+/* Address Section */
+.address {
+    width: 45%; /* Address section takes 45% width */
+    margin-bottom: 20px;
+}
+
+.address h1 {
+    font-size: 24px;
+    margin-bottom: 12px;
+    color: #003366; /* Dark blue for headings */
+    font-weight: bold;
+}
+
+.address i {
+    font-size: 18px;
+    color: #007bff; /* Blue color for icons */
+    margin-right: 8px;
+    display: inline-flex; /* Ensures the icon stays on the same line as the text */
+    align-items: center; /* Vertically centers the icon with text */
+}
+
+.address p {
+    font-size: 16px;
+    color: #555555; /* Slightly grey for text */
+    margin: 5px 0;
+    display: inline-flex; /* Ensures text stays on the same line as the icon */
+    align-items: center; /* Vertically centers the text with the icon */
+}
+
+.address i a {
+    color: #007bff; /* Link color */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.address i a:hover {
+    color: #0056b3; /* Darker blue on hover */
+}
+
+/* Business Hours Section */
+.timing {
+    width: 45%; /* Business hours section takes 45% width */
+    margin-bottom: 20px;
+}
+
+.timing h1 {
+    font-size: 24px;
+    margin-bottom: 12px;
+    color: #003366; /* Dark blue for headings */
+    font-weight: bold;
+}
+
+.timing p {
+    font-size: 16px;
+    color: #555555; /* Grey text */
+}
+
+/* Bottom Copyright Section */
+footer > div:last-child {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 30px;
+    font-weight: normal;
+    color: #888888; /* Light grey for copyright text */
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+    .foot {
+        flex-direction: column; /* Stack sections vertically on smaller screens */
+        align-items: center;
+    }
+
+    .address, .timing {
+        width: 100%; /* Full width on smaller screens */
+    }
+
+    footer {
+        padding: 30px 15px; /* Adjust padding for smaller screens */
+    }
+
+    .address h1, .timing h1 {
+        font-size: 20px; /* Smaller headings on mobile */
+    }
+
+    .address p, .timing p {
+        font-size: 14px; /* Adjust text size for mobile */
+    }
+}
